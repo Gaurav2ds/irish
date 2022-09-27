@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish flower prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <img src="https://www.floraqueen.com/blog/wp-content/uploads/2020/01/shutterstock_1618009993.jpg">
+     
+    <form action="irish" method="POST">
+        
+        
+         <label  > SepalLengthCm :</label>
+        
+       
+        <input type="value" name="SepalLengthCm" >
+        <br>
+        <label >SepalWidthCm :</label>
+        <input type="value" name="SepalWidthCm" > 
+        <br>
+        <label >PetalLengthCm :</label>
+        <input type="value" name="PetalLengthCm" > 
+        <br>
+        <label > PetalWidthCm : </label>
+        <input type="value" name="PetalWidthCm" >
+        
+        <br>
+        <input type="submit" >
+        <br>
+        
+        {{Species}}
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
